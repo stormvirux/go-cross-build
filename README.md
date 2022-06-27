@@ -2,7 +2,7 @@
 This actions generates cross-platform executable files from a Go module.
 
 ![release](/assets/release.png)
-> Automatic release management of the [**tree**](https://github.com/thatisuday/tree/releases) CLI tool using **go-build-action** action.
+> Automatic release management of the [**tree**](https://github.com/stormvirux/tree/releases) CLI tool using **go-build-action** action.
 
 
 ## Workflow setup
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
       - name: Generate build files
-        uses: thatisuday/go-cross-build@v1
+        uses: stormvirux/go-cross-build@v1
         with:
             platforms: 'linux/amd64, darwin/amd64, windows/amd64'
             package: 'demo'
